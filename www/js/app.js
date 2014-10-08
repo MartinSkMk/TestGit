@@ -9,6 +9,8 @@ function AppCtrl($scope, FreshlyPressed, $log) {
     $scope.refresh = function() {        
         FreshlyPressed.getBlogs($scope);
     }
+
+    console.log($scope.posts);
 }
 
 function FreshlyPressed($http, $log) {
